@@ -1,5 +1,8 @@
 import HeroSection from '@/components/HeroSection';
 import FeaturesGrid from '@/components/FeaturesGrid';
+import QuantumTaxCalculator from '@/components/QuantumTaxCalculator';
+import LiveAIPredictions from '@/components/LiveAIPredictions';
+import ARDemoLayout from '@/components/ARDemoLayout';
 
 export default function Home() {
   return (
@@ -24,30 +27,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Demo Section */}
-      <section className="py-20 px-6 bg-neuro-darker/50">
+      {/* Quantum Tax Calculator */}
+      <section id="quantum-tax" className="py-20 px-6 bg-neuro-darker/50">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-neuro-gradient bg-clip-text text-transparent">
-                Live AI Financial Dashboard
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+              <span className="bg-gradient-to-r from-quantum-blue to-quantum-purple bg-clip-text text-transparent">
+                Quantum Tax Optimization
               </span>
             </h2>
-            <p className="text-xl text-neuro-light/80 mb-8">
-              Bekijk hoe NeuroFin je financiën transformeert in real-time.
+            <p className="text-xl text-neuro-light/80 text-center mb-8 max-w-3xl mx-auto">
+              Bereken je maximale belastingbesparing met quantum-algoritmes. 34-62% besparing mogelijk voor Nederlandse ondernemers.
             </p>
-            
-            {/* Demo Visualization */}
-            <div className="relative h-[400px] rounded-2xl overflow-hidden border border-neuro-primary/30 mb-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-neuro-darker to-neuro-dark flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🧠</div>
-                  <div className="text-2xl font-bold text-neuro-primary">Neural AI Active</div>
-                  <div className="text-neuro-light/60 mt-2">Analyzing financial patterns...</div>
-                </div>
-              </div>
-            </div>
           </div>
+          <QuantumTaxCalculator />
+        </div>
+      </section>
+
+      {/* Live AI Predictions */}
+      <section id="ai-predictions" className="py-20 px-6">
+        <div className="container mx-auto">
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+              <span className="bg-gradient-to-r from-neuro-accent to-neuro-secondary bg-clip-text text-transparent">
+                Live AI Predictions
+              </span>
+            </h2>
+            <p className="text-xl text-neuro-light/80 text-center mb-8 max-w-3xl mx-auto">
+              Real-time financiële trend voorspellingen met neurale netwerken. 89.8% gemiddelde nauwkeurigheid.
+            </p>
+          </div>
+          <LiveAIPredictions />
+        </div>
+      </section>
+
+      {/* AR Financial Demo */}
+      <section id="ar-demo" className="py-20 px-6 bg-neuro-darker/50">
+        <div className="container mx-auto">
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+              <span className="bg-gradient-to-r from-neuro-secondary to-neuro-accent bg-clip-text text-transparent">
+                AR Financial Demo
+              </span>
+            </h2>
+            <p className="text-xl text-neuro-light/80 text-center mb-8 max-w-3xl mx-auto">
+              Ervaar je financiën in augmented reality. 3D visualisatie, interactieve portfolio's, en spatial data exploration.
+            </p>
+          </div>
+          <ARDemoLayout />
         </div>
       </section>
 
@@ -74,7 +101,7 @@ export default function Home() {
               </button>
             </div>
             <p className="mt-6 text-neuro-light/60 text-sm">
-              🦀 Sovereign Architect Certified • AVG/GDPR Compliant • 256-bit Encryptie
+              🦀 Sovereign Architect Certified • AVG/GDPR Compliant • 256-bit Encryptie • 100% Nederlands
             </p>
           </div>
         </div>
